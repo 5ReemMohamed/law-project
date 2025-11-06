@@ -87,8 +87,14 @@ html[dir="rtl"] .header::after {
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.5px;
+  font-size: 14px;
 }
+@media screen and (min-width:450px) {
+  .custom-navbar .navbar-brand {
 
+  font-size: 20px;
+}
+}
 .custom-navbar .navbar-brand i{
     color: #dda063;
 }
