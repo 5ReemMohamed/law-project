@@ -204,8 +204,8 @@ ease;
   margin-bottom: 20px;
   font-size: 40px;
   font-weight: 600;
-  color: transparent; /* remove fill color */
-  -webkit-text-stroke: .7px #dda063; /* outline thickness and color */
+
+  color:#dda063 ;
 }
 html[dir="rtl"] .hero .person-name,html[dir="rtl"] .header-badge{
   text-align: right;
@@ -288,11 +288,19 @@ html[dir="rtl"]  header .info-item{
  header .info-item.sec-item{
         border-right: 0;
  }
+ html[dir="rtl"]  header .info-item.sec-item{
+  border-right: 0;
+  border-left: 0;
+}
 }
 @media screen and (min-width:992px) {
      header .info-item.sec-item{
         border-right: 1px solid rgba(255, 255, 255, 0.2);
  }
+ html[dir="rtl"]  header .info-item.sec-item{
+  border-right: 0;
+   border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
   header .header-info h3 {
     font-size: 30px;
 }
@@ -834,4 +842,9 @@ html[dir="rtl"] .swiper-button-next {
 html[dir="rtl"] .swiper-button-prev {
   left: auto;
   right: 10px;
+}
+
+.btn-light:hover{
+background-color: #d19151;
+color: #111;
 }
