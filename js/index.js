@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const regex = {
-    name: /^[A-Za-z\s]{3,}$/,
+   name: /^[A-Za-z\u0600-\u06FF\s]{3,}$/,
     email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
     phone: /^\+?\d{8,15}$/,
     subject: /^.{3,}$/,

@@ -855,6 +855,18 @@ html[dir="rtl"] .swiper-button-prev {
 background-color: #d19151;
 color: #111;
 }
+@media screen and (min-width:768px) {
+  .gallery .special-1{
+    margin-top: -200px;
+  }
+ 
+ .gallery .special-2{
+    margin-top: -180px;
+  }
+  html[dir="rtl"] .gallery .special-2{
+    margin-top: -180px;
+  }
+}
 @media screen and (min-width:992px) {
   .gallery .special{
     margin-top: -260px;
@@ -862,15 +874,20 @@ color: #111;
   .gallery .special-3{
     margin-top: -50px;
   }
-}
-@media screen and (min-width:768px) {
-  .gallery .special-1{
-    margin-top: -200px;
+  html[dir="rtl"] .gallery .special-1{
+    margin-top: -190px;
   }
- .gallery .special-2{
-    margin-top: -180px;
+    html[dir="rtl"] .gallery .special-2{
+    margin-top: -10px;
+  }
+    html[dir="rtl"] .gallery .special-3{
+    margin-top: -210px;
+  }
+    html[dir="rtl"] .gallery .special-4{
+    margin-top: -190px;
   }
 }
+
 
 .person-section {
   background-color: #f9f9f9;
