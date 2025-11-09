@@ -70,7 +70,7 @@ section {
 }
 
 html[dir="rtl"] .header::after {
-  background-image: linear-gradient(-90deg, #121E47 51%, rgba(0, 0, 0, 0) 80%);
+  background-image: linear-gradient(-200deg, #121E47 51%, rgba(0, 0, 0, 0) 100%);
 }
 
 
@@ -700,6 +700,10 @@ textarea {
   transition: all 0.3s ease-in-out;
 
 }
+.footer ul li a .fa-whatsapp {
+ font-size: 24px;
+
+}
 
 .footer ul li a:hover {
   background-color: #e8bf96;
@@ -789,12 +793,10 @@ html[dir="rtl"] .footer p{
       transition: all 0.3s ease;
     }
 
-    /* When Arabic is active */
     body.rtl {
       direction: rtl;
     }
 
-    /* Fixed position for button */
     .translate-btn {
       position: fixed;
       bottom: 20px;
@@ -840,7 +842,6 @@ html[dir="rtl"] .footer p{
   transform: scale(1.03);
 }
 
-/* RTL support */
 html[dir="rtl"] .swiper-button-next {
   right: auto;
   left: 10px;
@@ -853,4 +854,69 @@ html[dir="rtl"] .swiper-button-prev {
 .btn-light:hover{
 background-color: #d19151;
 color: #111;
+}
+@media screen and (min-width:992px) {
+  .gallery .special{
+    margin-top: -260px;
+  }
+  .gallery .special-3{
+    margin-top: -50px;
+  }
+}
+@media screen and (min-width:768px) {
+  .gallery .special-1{
+    margin-top: -200px;
+  }
+ .gallery .special-2{
+    margin-top: -180px;
+  }
+}
+
+.person-section {
+  background-color: #f9f9f9;
+}
+.person-container{
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+padding-right: 0 !important;
+--bs-gutter-x: 0;
+border: 1px solid #ebb912;
+
+
+}
+.person-box {
+  background: rgba(0, 0, 0, 0.7);
+  background-image: url('../images/person.jpg'); 
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  height: 60vh;
+}
+
+@media screen and (min-width:992px) {
+  .person-box {
+  height: 85vh;
+}
+
+}
+@media screen and (min-width:1200px) {
+  .person-box {
+  height: 70vh;
+}
+
+}
+
+.person-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.person-box .content h2{
+  color: #193750;
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+}
+.person-box .content p{
+  color: #686767;
+  line-height: 1.7;
+  text-align: justify;
 }
