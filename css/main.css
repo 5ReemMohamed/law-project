@@ -920,3 +920,12 @@ border: 1px solid #ebb912;
   line-height: 1.7;
   text-align: justify;
 }
+
+.gmt{
+  text-decoration: none;
+  display: inline-block;
+  color: #dda063;
+  transform: scale(1.2);
+  margin: 0 5px;
+  font-weight: 700;
+}
