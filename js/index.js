@@ -100,14 +100,10 @@ if (scrollBtn) {
 }
 
 /* ---------------------- AOS INIT ---------------------- */
-if (window.AOS) {
-  AOS.init({
-    duration: 1000,
-    once: false,
-    offset: 100,
-  });
-}
-
+AOS.init({
+  duration: 400,   // faster animation
+  offset: 50,      // trigger earlier
+});
 /* ---------------------- TRANSLATE BUTTON & FORM ---------------------- */
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("translateBtn");
